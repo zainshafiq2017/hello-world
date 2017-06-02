@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="first.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="first.js"></script>
+    <!--<a href="http://www.example.com">Some link</a><br />
+    //<div id="demo">some content</div><br />
+    //
+    //<button onclick="show();">Click Me</button><br /> -->
+    <!--<button id="demo">Start</button><br />
+    <input type="text" id="name" onchange="change()"> -->
+    <div>
+
+      <button onclick="prev()"> Prev </button>
+      <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="100px"/>
+      <button onclick="next()"> Next </button>
+    </div>
+    <p id='txt' onclick='test();'>20</p>
+    <script>
+      function test() {
+      var x=document.getElementById('txt');
+      var n = x.innerHTML;
+      x.innerHTML = n/2;
+      }
+    </script>
+    <form onsubmit="return validate()" method="post">
+
+      Number: <input type="text" name="num1" id="num1" /><br />
+
+      Repeat: <input type="text" name="num2" id="num2" /><br />
+
+      <input type="submit" value="Submit" />
+    
+</form>
+    <div id="test">
+      <p>some text</p>
+    </div>
+    <script>
+      var el=document.getElementById("test");
+      alert(el.hasChildNodes());
+    </script>
+  </body>
+</html>
